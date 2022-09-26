@@ -1,0 +1,23 @@
+<div class="container mt-5 mb-5">
+  <h1>Contact</h1>
+  <form class="col-lg-8"   #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)" >
+    <div class="row">
+      <div class="col-lg-12 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Enter Name " name="name" ngModel/>
+      </div>
+      <div class="col-lg-12 mt-2 mb-2">
+        <input type="email" class="form-control" placeholder="Enter Email ID" name="email" ngModel />
+      </div>
+      <div class="col-lg-12 mt-2 mb-2">
+        <input type="number" class="form-control" placeholder="Enter Mobile" name="mobile" ngModel/>
+      </div>
+
+      <div class="col-lg-12 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Enter Message" name="message"  ngModel/>
+      </div>
+      <div class="col-lg-12">
+        <button class="btn btn-md btn-dark" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
